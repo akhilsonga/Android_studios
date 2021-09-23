@@ -1,0 +1,23 @@
+package com.example.information;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+TextView show;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        show=findViewById(R.id.show);
+    }
+
+    public void toast_submit(View view) {
+        Toast.makeText(this, "Submitted",Toast.LENGTH_SHORT).show();
+        show.setText("Sucessfully wasted 2 minutes");
+    }
+}
